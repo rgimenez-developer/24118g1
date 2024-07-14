@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.bgRojo {
+    background-color: #db4648;
+}
+
+.links a, .linksSinDecoration, #footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.links li, #footer li {
+    list-style: none;
+}
+
+.linkAnimado:hover {
+    animation: rubberBand;
+    animation-duration: 2s;
+}
+
+#banner {
+    background-image: url('../img/banner-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    box-shadow: inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
+}
+
+#busqueda {
+    background-color: black;
+}
+
+.movie-item {
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.movie-item:hover {
+    transform: scale(1.05);
+}
+
+.movie-item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#footer {
+    background-color: #db4648;
+    padding: 1rem;
+}
+
+#footer a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
